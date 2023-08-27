@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYM</title>
+  </head>
+  <style>
+    body {
+      color: rgb(161, 152, 152);
+      margin: 0px;
+      padding: 0px;
+      background: url("img/man-2604149_1280.jpg");
+      height: 100px;
+    }
+    .left {
+      display: inline-block;
+      /*border: 0px solid red;*/
+      position: absolute;
+      left: 34px;
+      top: 20px;
+    }
+    .lest div {
+      line-height: 19px;
+      font-size: 20px;
+    }
+    .left img {
+      width: 100px;
+    }
+    .mid {
+      display: block;
+      width: 50%;
+      margin: 18px auto;
+      
+      /*border: 2px solid rgb(166, 174, 166);*/
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      /*border: 2px solid khaki;*/
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      color: rgb(255, 255, 255);
+      display: inline-block;
+    }
+    .navbar li a {
+      color: rgb(197, 207, 221);
+      text-decoration: none;
+      margin: 10px 15px;
+    }
+    .navbar li a:hover,
+    .navbar li a :active {
+      text-decoration: underline;
+      color: black;
+    }
+    .btn {
+      background-color: white;
+      color: black;
+      margin: 0px 15px;
+      padding: 2px 8px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #23d6f5;
+    }
+    .containner{
+      /*  border: 2px solid #23d6f5;*/
+        border-radius: 20px;
+        margin: 100px 50px;
+        padding: 5px 5px;
+        width: 30%;
+        height: 300%;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 200px;
+        margin: 15px auto;
+        padding: 2px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .containner button{
+        width: 130px;
+        color: white;
+        background-color: black;
+    }
+    h1{
+      color: white
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!--left box for logo-->
+      <div class="left">`
+        <img src="img/dumbell.jpg" alt="" />
+        <div>JATIN FITNESS</div>
+      </div>
+      <!--mid box for buttons-->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">FITNESS CALCULATOR</a></li>
+          <li><a href="">INFORMATION</a></li>
+        </ul>
+      </div>
+      <!--right box for information-->
+      <div class="right">
+        <button class="btn">Call us</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="containner">
+        <h1>Join the best gym in delhi</h1>
+        <form action="noaction.php">
+           <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Name">
+           </div>
+           <div class="form-group">
+            <input type="text"name="" placeholder="Enter you Age">
+           </div>
+           <div class="form-group">
+            <input type="text"name="" placeholder="Enter you Email id">
+           </div>
+           <div class="form-group">
+            <input type="text"name="" placeholder="Enter your Phone number">
+           </div>
+           <button class="btn">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>
